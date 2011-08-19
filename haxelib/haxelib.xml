@@ -1,0 +1,6 @@
+<project name="xirsys_injector" url="http://github.com/xirsys/injector" license="BSD">
+	<user name="xirsys"/>
+	<tag v="javascript,php,neko,cpp,flash,flash9,cross"/>
+	<description>An injection library used by the Cube MVC framework. Check the readme file for more information.</description>
+	<version name="1.0.0">1.0.0</version>
+</project>

@@ -1,0 +1,24 @@
+* Injector (a cross-platform injection library used by Cube)
+
+Injector is a haXe injection library loosely based on the SwiftSuspenders injection library used by RobotLegs.
+
+** Using Injector
+
+The Injector provides a means to inject an existing instance, a new instance or a singleton into a variable flagged with the @Inject meta tag: -
+
+injector.mapInstance( MyType, someObject );
+injector.mapClass( MyType, SomeClass );
+injector.mapSingleton( MyType, SomeSingleton );
+
+Injection then occurs from a manual invocation: -
+
+Injector.inject( myInstance );
+
+In myInstance, there will then need to be class level properties that have the @Inject meta, such as: -
+
+@Inject public var myVar : MyType;
+
+ 
+** Releases
+
+1.0 - This release is credited to Lee Sylvester (Lazarus404)
