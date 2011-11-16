@@ -101,7 +101,7 @@ class Injector
 		var mapping : InjectionMap = { name : name, map : map, mapType : SingletonType };
 		_mappings.set( name, mapping );
 		if ( injectSingleton )
-			applyInjection( inst );
+			applyInjection( inst, true );
 		return mapping;
 	}
 	
