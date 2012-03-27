@@ -135,7 +135,7 @@ class Injector
 		        var infos = new haxe.rtti.XmlParser().processElement( x );
 		        var iCls = Type.enumParameters( getClassFields( cls ).get( fld ).type )[0];
 				if ( !_mappings.exists( iCls ) )
-					throw new InjectorException( "Class type not mapped for field " + fld + " in class " + clsName );
+					throw new InjectorException( "Class type not mapped for field '" + fld + "' in class '" + clsName + "'" );
 				else
 				{
 					var mapping = _mappings.get( iCls );

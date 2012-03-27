@@ -40,4 +40,8 @@ class InjectorException
 		msg = _msg;
 		infos = _infos;
 	}
+	
+	public function toString():String {
+		return msg + ", "+infos.fileName;
+	}
 }
